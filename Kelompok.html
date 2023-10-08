@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinemat XX1</title>
+    <link rel="stylesheet" href="Cinema.css">
+    <link rel="icon" href="image/icon.png">
+</head>
+<body>
+    
+<!--Header-->
+    <header>
+        <div class="logo">
+            <img src="image/image-removebg-preview (21).png" alt="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Movie</a></li>
+                <li><a href="#">Top</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn"><b>Genre</b></button>
+                    <div class="dropdown-content">
+                    <a href="Kelompok.html">Cartoon</a>
+                    <a href="#">Thiller</a>
+                    <a href="#">Comedy</a>
+                    </div>
+                  </div>
+                <li><a href="#">Ticket</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Search</button>
+        </div>
+    </header>
+</body>
+<!--end header-->
+
+
+<section class="banner">
+    <div class="banner-text">
+        <h1 style="color: white;" >Welcome to Cinemat XX1</h1>
+        <p>Experience the thrilling sensation while watching</p>
+    </div>
+</section>
+ <h3 class="top" style="color: white;">--- Top Movie ---</h3>
+
+
+<!-- Slide Show -->
+<div class="banner-display" style="max-width:500px">
+    <img class="mySlides" src="image/banner bios.jpg" style="width: 180%" height="100%">
+    <img class="mySlides" src="image/banner.jpg" style="width: 180%" height="100%">
+    <img class="mySlides" src="image/banner 1.jpg" style="width: 180%" height="100%">
+    <img class="mySlides" src="image/banner 2.jpg" style="width: 180%" height="100%">
+    <img class="mySlides" src="image/peganti 5.jpg" style="width: 180%" height="100%">
+    <img class="mySlides" src="image/banner 4.jpg" style="width: 180%" height="100%">
+    <img class="mySlides" src="image/banner 6.jpg" style="width: 180%;" height="100%">
+    <img class="mySlides" src="image/banner 7.jpg" style="width: 180%;" height="100%">
+  </div>
+  
+  <script>
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3000); // 3 Scd
+  }
+  </script>
+<!-- End SlideShow -->
+
+
+<!-- Play -->
+<h3 class="playing" style="background-color: rgb(179, 8, 8);">Now Playing</h3>
+<!-- End Play -->
+
+
+<!-- Movie List -->
+<section class="movie-list">
+
+    <article class="movie">
+        <img src="image/peganti.jpg" alt="Film 1">
+        <h2>Soul</h2>
+        <img src="image/su.png" class="foto1">
+    </article>
+
+    <article class="movie">
+        <img src="image/poster 2.jpg" alt="Film 2">
+        <h2>Coco</h2>
+        <img src="image/su.png" class="foto1">
+    </article>
+
+    <article class="movie">
+        <img src="image/peganti p3.webp" alt="Film 2">
+        <h2>Spiderman Into The Spider Verse</h2>
+        <img src="image/su.png" class="foto1">
+    </article>
+
+    <article class="movie">
+        <img src="image/poster 3.jpg" alt="Film 2">
+        <h2>Shrek</h2>
+        <img src="image/su.png" class="foto1">
+
+    </article>
+
+</section>
+<section class="movie-list">
+
+    <article class="movie">
+
+        <img src="image/poster7.jpg" alt="Film 1">
+        <h2>The Adams Family</h2>
+        <img src="image/su.png" class="foto1">
+
+    </article>
+
+    <article class="movie">
+
+        <img src="image/poster6.jpg" alt="Film 2">
+        <h2>Frozen 2</h2>
+        <img src="image/su.png" class="foto1">
+
+    </article>
+
+    <article class="movie">
+
+        <img src="image/poster8.jpg" alt="Film 2">
+        <h2>Toy Story</h2>
+        <img src="image/su.png" class="foto1">
+
+    </article>
+
+    <article class="movie">
+
+        <img src="image/poster9.jpg" alt="Film 2" class="foto1">
+        <h2>Sonic 2</h2>
+        <img src="image/su.png" class="foto1">
+    </article>
+
+</section>
+<!-- End Movie List -->
+
+<h3 class="top" style="color: white;">--- Top Movie ---</h3>
+
+
+    <footer>
+        <p>Develop By Faustian</p>
+    </footer>
+</body>
+</html>
